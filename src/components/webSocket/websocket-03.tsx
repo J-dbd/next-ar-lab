@@ -1,3 +1,9 @@
+"use client";
+import { useSelector } from "react-redux";
+import { RootState } from "@/lib/store";
+import ContainerComponentSecond from "@/components/Container/secondary";
+import CounterComponent from "@/components/reduxTester/CounterHandlers";
+
 export default function WS_third() {
   const callws = () => {
     const newSocket = new WebSocket(
@@ -33,10 +39,19 @@ export default function WS_third() {
     };
   };
   return (
-    <div>
+    <>
       <h1>WebSocket Demo : 서버 컴포넌트</h1>
       <button onClick={callws}>채팅 시작</button>
-      <section></section>
-    </div>
+      <section>
+        <ul>
+          <li>
+            이 컴포넌트는 클라이언트 측에서 전역으로 사용되는 counter 관련
+            설정을 테스트하는 컴포넌트입니다.
+          </li>
+          <CounterComponent />
+        </ul>
+      </section>
+      <ContainerComponentSecond />
+    </>
   );
 }
