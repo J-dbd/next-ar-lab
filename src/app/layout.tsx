@@ -1,14 +1,15 @@
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 
-import "./globals.css";
+//Redux
+import { RootState } from "@/lib/store";
+import { initializeStoreWithTokens } from "@/lib/initializeStoreWithTokens";
 import StoreProvider from "@/app/StoreProvider";
 
+import "./globals.css";
 import StyledComponentsRegistry from "@/lib/styled-component/registry";
 
-import { initializeStoreWithTokens } from "@/lib/initializeStoreWithTokens";
-import { RootState } from "@/lib/store";
-
+// for font
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
