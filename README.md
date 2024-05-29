@@ -5,6 +5,7 @@
 1. [WebSocket](./1.%20webScoketRecords.md)
 2. [Design Token](./1.%20designTokenRecords.md)
 3. Redux
+4. [styled components]
 
 ## How to run
 

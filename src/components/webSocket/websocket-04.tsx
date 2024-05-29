@@ -1,4 +1,7 @@
 "use client";
+
+import ContainerComponent from "@/components/Container/primary";
+
 export default function WS_forth() {
   const callws = () => {
     let url = "ws://localhost:3050/wstester";
@@ -45,7 +48,7 @@ export default function WS_forth() {
         WebSocket Demo 5: 서버 컴포넌트
       </h1>
       <button onClick={callws}>채팅 시작</button>
-      <section></section>
+      <ContainerComponent />
     </div>
   );
 }

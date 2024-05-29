@@ -2,6 +2,7 @@ import Image from "next/image";
 import styles from "./page.module.css";
 import Link from "next/link";
 import WS_forth from "@/components/webSocket/websocket-04";
+import WS_third from "@/components/webSocket/websocket-03";
 export default function Home() {
   return (
     <main className={styles.main}>
@@ -44,7 +45,8 @@ export default function Home() {
       <div className={styles.grid}>
         {/* <WS_first />
         <WS_second /> */}
-        <WS_forth />
+        {/* <WS_forth /> */}
+        <WS_third />
       </div>
     </main>
   );
